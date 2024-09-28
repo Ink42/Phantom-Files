@@ -7,7 +7,7 @@ def migrate(new_dir):
     
     # print(new_dir)
     update_history(new_dir)
-    # shutil.move(main_dir, new_dir)
+    shutil.move(main_dir, "/home/t480/Pictures")
 
 def update_history(new_dir):
     print("s")
