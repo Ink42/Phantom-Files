@@ -2,23 +2,23 @@ import os
 import random
 import shutil
 
-off_zones = []
-
+main_dir = os.getcwd()
 def migrate(new_dir):
-    current_dir = os.getcwd()
-    shutil.move(current_dir, new_dir)
+    print(new_dir)
+    # shutil.move(main_dir, new_dir)
 
 def find_possible_paths(starting_point):
     legal_paths = []
     os.chdir(starting_point)
     
-    while True:
+    for i in range(5):
         new_path = scout_dir()
         if new_path:  
             legal_paths.append(new_path)
-            print(f"Found directory: {new_path}")
         else:
-            break  
+            break
+    if legal_paths:
+        migrate(random.choice(legal_paths))  
 
 def scout_dir() -> str:
     directories = [x for x in os.listdir() if os.path.isdir(x) and "." not in x]
