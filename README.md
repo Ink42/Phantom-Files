@@ -8,8 +8,6 @@ Phantom Folder Concept
 
  ![Screenshot from 2024-09-28 15-23-23](https://github.com/user-attachments/assets/e4022246-608d-4474-b2a6-a97b11b6c33b)
 
-
-[] Change folder name
-[] Bash commands to communicate with the folder (one wat communication)
-
-
+- [ ] Change folder name
+- [ ] Make changes at specified times
+- [ ] Implement bash commands for one-way communication with the folder
